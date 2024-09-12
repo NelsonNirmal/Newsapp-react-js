@@ -1,0 +1,86 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    width: 100%; /* Full width */
+    text-align: center;
+    font-size: 24px; /* Adjust font size as needed */
+    font-family: Arial, sans-serif; /* Optional: Adjust font family */
+    border-radius: 5px; /* Optional: Rounded corners */
+    margin: 20px 0; /* Space around the banner */
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping of cards */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 10px;
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width */
+  }
+  
+  .card {
+    background-color: white; /* Card background color */
+    color: black; /* Text color */
+    border-radius: 10px; /* Rounded corners for cards */
+    overflow: hidden; /* Hide overflow */
+    width: 300px; /* Width of each card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Card shadow */
+    margin-right: 20px; /* Space between cards */
+    flex-shrink: 0; /* Prevent card from shrinking */
+    position: relative;
+  }
+  
+  .card-content {
+    position: relative;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 200px; /* Height of the image */
+    object-fit: cover; /* Ensure the image covers the card without distortion */
+  }
+  
+  .card-text {
+    padding: 10px;
+  }
+  
+  .source-icon {
+    width: 20px; /* Icon size */
+    height: 20px;
+    vertical-align: middle; /* Align with text */
+  }
+  
+  .card a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .card a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .banner {
+      font-size: 20px; /* Smaller font size on smaller screens */
+      height: auto; /* Adjust height for smaller screens */
+    }
+  
+    .card {
+      width: 250px; /* Adjust card width for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .banner {
+      font-size: 18px; /* Even smaller font size for very small screens */
+    }
+  
+    .card {
+      width: 100%; /* Full width for cards on very small screens */
+      max-width: 300px; /* Max width for cards */
+    }
+  }
+  
