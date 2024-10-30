@@ -1,0 +1,23 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.carousel-inner img {
+    height: 500px; /* Set your desired height */
+    
+     /* Ensure the image covers the entire area without distortion */
+  }
+.carousel-inner{
+    width:1400px;
+    border-radius:25px;
+
+}
+.cen{
+    display:flex;
+    justify-content:center;
+    margin:20px;
+}
+/* styles.css */
+#bootstrap-scope .btn {
+    /* Only apply Bootstrap styles within the #bootstrap-scope element */
+  }
+  
+  
